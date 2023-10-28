@@ -133,6 +133,7 @@ def print_save_review(call):
     save_qa_review(user_id, message_id, call.data)
 
     # Удалите инлайн-клавиатуру после оценки
+    bot.delete_message(user_id, message_id)
     bot.edit_message_reply_markup(user_id, message_id, reply_markup=None)
 
 
