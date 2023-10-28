@@ -134,7 +134,6 @@ def print_save_review(call):
 
     # Удалите инлайн-клавиатуру после оценки
     bot.delete_message(user_id, message_id)
-    bot.edit_message_reply_markup(user_id, message_id, reply_markup=None)
 
 
 print("Bot is running!")
